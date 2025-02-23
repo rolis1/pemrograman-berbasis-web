@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolis Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="haerin2.jpg" alt="foto profile">
+            <div class="profile-info">
+                <h1>Rolis Liu</h1>
+                <p><b>NPM: </b> 2310631170117</p>
+                <p><b>Kelas: </b>4C Informatika</p>
+            </div>
+        </div>
+        <p><b>Hobi:</b> Bermain gitar, bermain basket, main ml</p>
+        <h2>Sosial Media</h2>
+        <div class="social-icons">
+            <a href="https://github.com/rolis1" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/rolisliu0" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com/in/rolis-liu" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <button class="like-btn" onclick="increaseLike()">
+            <i class="fa-solid fa-thumbs-up"></i> Like
+        </button>
+        <p class="like-count" id="likeCount">0 Likes</p>
+        
+        <script>
+            let likeCount = 0;
+            function increaseLike() {
+                likeCount++;
+                document.getElementById('likeCount').textContent = likeCount + " Likes";
+            }
+        </script>
+</body>
+</html>
