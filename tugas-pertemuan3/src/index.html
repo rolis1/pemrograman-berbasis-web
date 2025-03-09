@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Penjualan Rolis</title>
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gray-100 p-5">
+    <div class="max-w-3xl mx-auto">
+      <div class="bg-orange-100 rounded-lg p-6 shadow-md mb-6">
+        <h2 class="text-xl font-semibold text-blue-900 text-center mb-4">
+          Form Penjualan
+        </h2>
+        <div class="mb-4">
+          <label class="block font-semibold mb-1">Produk</label>
+          <input
+            type="text"
+            placeholder="Nama Produk"
+            class="w-full p-2 border rounded"
+          />
+        </div>
+        <div class="mb-4">
+          <label class="block font-semibold mb-1">Jumlah</label>
+          <input
+            type="number"
+            placeholder="Jumlah"
+            class="w-full p-2 border rounded"
+          />
+        </div>
+        <div class="mb-4">
+          <label class="block font-semibold mb-1">Harga (Rp)</label>
+          <input
+            type="number"
+            placeholder="Harga per satuan"
+            class="w-full p-2 border rounded"
+          />
+        </div>
+        <button
+          class="bg-teal-600 hover:bg-blue-900 text-white px-4 py-2 rounded"
+        >
+          Tambahkan
+        </button>
+      </div>
+
+      <div class="bg-orange-100 rounded-lg p-6 shadow-md">
+        <h2 class="text-xl font-semibold text-blue-900 text-center mb-4">
+          Data Penjualan Bulanan
+        </h2>
+        <table class="w-full border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-teal-600 text-white">
+              <th rowspan="2" class="p-3 border">No</th>
+              <th rowspan="2" class="p-3 border">Produk</th>
+              <th colspan="2" class="p-3 border">Penjualan</th>
+            </tr>
+            <tr class="bg-teal-600 text-white">
+              <th class="p-3 border">Jumlah</th>
+              <th class="p-3 border">Harga Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border border-gray-300">
+              <td class="p-3 text-center">1</td>
+              <td class="p-3">Macbook</td>
+              <td class="p-3 text-right">3</td>
+              <td class="p-3 text-right">Rp 120.000.000</td>
+            </tr>
+            <tr class="border border-gray-300">
+              <td class="p-3 text-center">2</td>
+              <td class="p-3">Mouse</td>
+              <td class="p-3 text-right">5</td>
+              <td class="p-3 text-right">Rp 1.500.000</td>
+            </tr>
+            <tr class="border border-gray-300">
+              <td class="p-3 text-center">3</td>
+              <td class="p-3">Watch</td>
+              <td class="p-3 text-right">2</td>
+              <td class="p-3 text-right">Rp 5.000.000</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr class="bg-gray-200 font-semibold">
+              <td colspan="2" class="p-3 text-center">Total Penjualan</td>
+              <td class="p-3 text-right">10</td>
+              <td class="p-3 text-right">Rp 126.500.000</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
