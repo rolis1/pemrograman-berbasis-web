@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Saya</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800, // durasi animasi (ms)
+      once: true, // animasi hanya sekali saat masuk layar
+    });
+  </script>
+
+  <body class="font-poppins bg-gray-100 text-gray-800 scroll-smooth">
+    <!-- Navbar -->
+    <header class="bg-blue-600 text-white py-4">
+      <nav class="container mx-auto flex justify-center items-center px-4">
+        <div class="flex space-x-6">
+          <a href="#tentang" class="hover:underline">Tentang</a>
+          <a href="#proyek" class="hover:underline">Proyek</a>
+          <a href="#kontak" class="hover:underline">Kontak</a>
+        </div>
+      </nav>
+      <div class="text-center mt-4">
+        <h1 class="text-3xl font-bold">Portfolio Saya</h1>
+        <p class="text-lg">Frontend Developer & Designer</p>
+      </div>
+    </header>
+
+    <!-- Tentang Saya -->
+    <section id="tentang" class="text-center py-10">
+      <img
+        src="pfp.jpg"
+        alt="Foto Profil"
+        class="w-32 h-32 mx-auto rounded-full mb-4"
+      />
+      <h2 class="text-xl font-semibold mb-2">Tentang Saya</h2>
+      <p class="max-w-xl mx-auto px-4">
+        Saya adalah seorang frontend yang berfokus pada desain modern dan
+        responsif menggunakan teknologi terbaru.
+      </p>
+      <h1 class="text-xl font-semibold mt-6">Proyek Saya</h1>
+    </section>
+
+    <section
+      id="proyek"
+      class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4"
+    >
+      <div class="bg-gray-50 rounded-lg shadow-md p-4">
+        <div class="overflow-hidden rounded mb-4 aspect-[19/6]">
+          <img
+            src="p1.png"
+            alt="Proyek 1"
+            class="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
+          />
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Proyek 1</h3>
+        <p>
+          Website E-commers yang dibuat dengan menggunakan HTML, CSS, dan
+          JavaScript. Website ini memiliki fitur keranjang belanja dan checkout.
+        </p>
+      </div>
+
+      <!-- Proyek 2 -->
+      <div class="bg-gray-50 rounded-lg shadow-md p-4">
+        <div class="overflow-hidden rounded mb-4 aspect-[19/6]">
+          <img
+            src="p2.png"
+            alt="Proyek 2"
+            class="w-full h-full object-cover transform transition-transform duration-300 hover:scale-105"
+          />
+        </div>
+        <h3 class="text-lg font-semibold mb-2">Proyek 1</h3>
+        <p>
+          installasi dan konfigurasi server, serta pengelolaan server
+          menggunakan teknologi terbaru. ubuntu server, nginx, dan docker.
+        </p>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="text-center py-10">
+      <h2 class="text-2xl font-semibold mb-4">Kontak</h2>
+      <p class="mb-4">Hubungi saya untuk bekerja sama!</p>
+      <a
+        href="mailto:rolisliu0@gmail.com"
+        class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+        >Hubungi Saya</a
+      >
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white text-center py-4">
+      © 2025 Portfolio Saya. Semua Hak Dilindungi.
+    </footer>
+  </body>
+</html>
